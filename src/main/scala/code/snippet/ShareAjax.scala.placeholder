@@ -1,0 +1,52 @@
+package code 
+package snippet 
+
+import scala.xml.{NodeSeq, Text}
+import net.liftweb.util._
+import net.liftweb.common._
+import java.util.Date
+import code.lib._
+import Helpers._
+
+object ShareAjax {
+  def render = {
+    // state
+    var email = ""
+    var emails = ""
+    var subject = ""
+    var message = ""
+    val whence = S.referer openOr "/"
+    
+    // our process method returns a
+    // JsCmd which will be sent back to the browser
+    // as part of the response
+    def process(): JsCmd= {
+      
+      // sleep for 400 millis to allow the user to
+      // see the spinning icon
+      Thread.sleep(400)
+       
+      // do the matching
+      asInt(age) match {
+        // display an error and otherwise do nothing
+        case Full(a) if a < 13 => S.error("age", "Too young!"); Noop
+        
+        // redirect to the page that the user came from
+        // and display notices on that page
+        case Full(a) => {
+          RedirectTo(whence, () => {
+            S.notice("Name: "+name)
+            S.notice("Age: "+a)
+          })
+        }
+        
+        // more errors
+        case _ => S.error("age", "Age doesn't parse as a number"); Noop
+      }
+    }
+    
+    // binding looks normal
+    "name=name" #> SHtml.text(name, name = _, "id" -> "the_name") &
+    "name=age" #> (SHtml.text(age, age = _) ++ SHtml.hidden(process))
+  }
+}

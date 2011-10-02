@@ -1,0 +1,18 @@
+<div id="main" class="lift:surround?with=default;at=content">
+	<head>    
+	    <script id="uploader" src="/scripts/html5uploader.js" type="text/javascript"></script>
+	    <script type="text/javascript">
+	    $(document).ready(function(){
+	        var uploader = new uploader('drop', 'status', '/uploader.php', null);    
+	      });
+	    </script>
+	</head>  
+
+  Static content... everything you put in the /static
+  directory will be served without additions to SiteMap
+   <div id="box">  
+           <div id="status">Przeciągnij plik z lokalnego folderu do pojemnika ...</div>  
+           <div id="drop"></div>  
+   </div>     
+</div>
+
