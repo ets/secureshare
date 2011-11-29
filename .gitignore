@@ -16,7 +16,6 @@ META-INF
 lib_managed
 lift_proto.db.h2*
 
-project/build
 project/boot
 
 ## generic files to ignore
