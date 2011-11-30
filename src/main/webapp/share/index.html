@@ -1,18 +1,68 @@
 <div id="main" class="lift:surround?with=default;at=content">
 	<head>    
-	    <script id="uploader" src="/scripts/html5uploader.js" type="text/javascript"></script>
-	    <script type="text/javascript">
-	    $(document).ready(function(){
-	        var uploader = new uploader('drop', 'status', '/uploader.php', null);    
-	      });
-	    </script>
+	   <style type="text/css">@import url(/scripts/jquery.ui.plupload/css/jquery.ui.plupload.css);</style>
+		<!-- Third party script for BrowserPlus runtime (Google Gears included in Gears runtime now) -->
+		<script type="text/javascript" src="http://bp.yahooapis.com/2.4.21/browserplus-min.js"></script>
+		
+		<!-- Load plupload and all it's runtimes and finally the jQuery UI queue widget -->
+		<script type="text/javascript" src="/scripts/plupload.full.js"></script>
+		<script type="text/javascript" src="/scripts/jquery.ui.plupload/jquery.ui.plupload.js"></script>
 	</head>  
 
-  Static content... everything you put in the /static
-  directory will be served without additions to SiteMap
-   <div id="box">  
-           <div id="status">Przeciągnij plik z lokalnego folderu do pojemnika ...</div>  
-           <div id="drop"></div>  
-   </div>     
+<form>
+    <div id="uploader">
+        <p>You browser doesn't have Flash, Silverlight, Gears, BrowserPlus or HTML5 support.</p>
+    </div>
+</form>
+
+<script type="text/javascript">
+// Convert divs to queue widgets when the DOM is ready
+$(function() {
+    $("#uploader").plupload({
+        // General settings
+        runtimes : 'html5,gears,flash,silverlight,browserplus',
+        url : 'upload.php',
+        max_file_size : '10mb',
+        chunk_size : '1mb',
+        unique_names : true,
+
+        // Resize images on clientside if we can
+        resize : {width : 320, height : 240, quality : 90},
+
+        // Specify what files to browse for
+        filters : [
+            {title : "Image files", extensions : "jpg,gif,png"},
+            {title : "Zip files", extensions : "zip"}
+        ],
+
+        // Flash settings
+        flash_swf_url : '/scripts/plupload.flash.swf',
+
+        // Silverlight settings
+        silverlight_xap_url : '/scripts/plupload.silverlight.xap'
+    });
+
+    // Client side form validation
+    $('form').submit(function(e) {
+        var uploader = $('#uploader').plupload('getUploader');
+
+        // Files in queue upload them first
+        if (uploader.files.length > 0) {
+            // When all files are uploaded submit form
+            uploader.bind('StateChanged', function() {
+                if (uploader.files.length === (uploader.total.uploaded + uploader.total.failed)) {
+                    $('form')[0].submit();
+                }
+            });
+                
+            uploader.start();
+        } else
+            alert('You must at least upload one file.');
+
+        return false;
+    });
+});
+</script>
+     
 </div>
 
