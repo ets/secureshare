@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="test">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/test/jetty-6.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/test/jetty-util-6.1.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/test/junit-4.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/test/specs_2.9.0-1-1.6.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/test/servlet-api-2.5-20081211.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="0.7.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/classpath_2.7.7-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/sbt_2.7.7-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/ivy-2.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/ivy_2.7.7-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/test-interface-0.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/compile_2.7.7-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/control_2.7.7-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/launcher-interface-0.7.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/jsch-0.1.31.jar!/" />
+      <root url="jar://$PROJECT_DIR$/project/boot/scala-2.7.7/org.scala-tools.sbt/sbt/0.7.5/io_2.7.7-0.7.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

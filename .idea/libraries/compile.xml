@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="compile">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-mapper_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/derby-10.7.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-common_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/logback-classic-0.9.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-json_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-db_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/commons-fileupload-1.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/htmlparser-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/joda-time-1.6.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-util_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-actor_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/commons-codec-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/activation-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/logback-core-0.9.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-webkit_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/paranamer-2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/mail-1.4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/scalap-2.9.0-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/lift-proto_2.9.0-1-2.4-M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib_managed/scala_2.9.0-1/compile/h2-1.2.147.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
